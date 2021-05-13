@@ -1,0 +1,78 @@
+.sub-form {
+  font-style: normal;
+}
+
+.sub-form__inp {
+  width: 100%;
+  padding: 17px 15px 15px 20px;
+  font-family: $os;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 1.87;
+  letter-spacing: -0.5px;
+  border: 2px solid $light-gray;
+  color: $pale-purple;
+
+  &::placeholder {
+    color: $pale-purple;
+  }
+}
+
+.sub-form__lch {
+  font-family: $os;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.5;
+  display: inline-block;
+  letter-spacing: -0.5px;
+  color: $pale-purple;
+  padding-left: 24px;
+  position: relative;
+
+  &::before {
+    @include pseudo();
+    @include square(24px);
+    border: 2px solid $light-gray;
+    top: 0;
+    left: 0;
+  }
+}
+
+.sub-form__ch:checked ~ label {
+  &::after {
+    @include pseudo();
+    @include size(14px, 11px);
+    top: 0;
+    left: 0;
+    background-image: url("../img/icon-check.svg");
+  }
+}
+
+.sub-form__agreement-link {
+  font-family: $os;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: -0.5px;
+  color: $blue;
+  text-decoration: none;
+}
+
+.sub-form__sub-btn {
+  width: 270px;
+  background: linear-gradient(0deg, #3D3BFF, #3D3BFF), #7CE187;
+  border: none;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  font-family: $os;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: $white;
+}

@@ -1,0 +1,58 @@
+.offers {
+  position: relative;
+  background-color: $blue;
+  font-family: $roboto;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  color: $white;
+}
+
+.offers__full {
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: -0.5px;
+  color: rgba($white, 0.4);
+
+}
+
+.offers__full-price {
+  font-family: $rs;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 47px;
+  letter-spacing: -2px;
+  display: block;
+}
+
+.offers__installment {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: -0.5px;
+}
+
+.offers__installment-price {
+  font-weight: normal;
+  font-size: 56px;
+  line-height: 74px;
+  letter-spacing: -2px;
+  display: block;
+}
+
+.offers__first {
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: -0.5px;
+}
+
+.offers__first-price {
+  font-family: $rs;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 53px;
+  letter-spacing: -2px;
+  display: block;
+}

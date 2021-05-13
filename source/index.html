@@ -12,7 +12,7 @@
   <link rel="preload" href="fonts/roboto-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/robotoslab-light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/robotoslab-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
 <main>
@@ -25,10 +25,10 @@
       <section class="price__offers offers">
         <div class="container">
           <h3 class="visually-hidden">Выгодные предложения</h3>
-          <div class="offers__sale">
-            <span>скидка</span>
-            <b>40% </b>
-            <small>первым 20</small>
+          <div class="offers__sale sale">
+            <span class="sale__word">скидка</span>
+            <b class="sale__size">40%</b>
+            <small class="sale__time">первым 20</small>
           </div>
           <p class="offers__full">Полная стоимость курса <span class="offers__full-price">50 000</span></p>
           <p class="offers__installment"><span class="offers__installment-price">2 900</span>Рассрочка без первого взноса</p>
@@ -49,19 +49,19 @@
           <form class="subscribe__form sub-form" action="https://echo.htmlacademy.ru" method="post">
             <div class="sub-form__box">
               <label class="visually-hidden" for="name">Имя</label>
-              <input type="text" name="name" id="name" placeholder="Имя" required>
+              <input class="sub-form__inp" type="text" name="name" id="name" placeholder="Имя" required>
             </div>
             <div class="sub-form__box">
               <label class="visually-hidden" for="tel">Телефон</label>
-              <input type="tel" name="tel" id="tel" placeholder="Телефон" required>
+              <input class="sub-form__inp" type="tel" name="tel" id="tel" placeholder="Телефон" required>
             </div>
             <div class="sub-form__box">
               <label class="visually-hidden" for="email">Email</label>
-              <input type="email" name="email" id="email" placeholder="Email" required>
+              <input class="sub-form__inp" type="email" name="email" id="email" placeholder="Email" required>
             </div>
             <div class="sub-form__box">
-              <input type="checkbox" name="agreement" id="agreement" checked>
-              <label for="agreement">Я согласен с условиями обработки персональных данных</label>
+              <input class="sub-form__ch" type="checkbox" name="agreement" id="agreement" checked>
+              <label class="sub-form__lch" for="agreement">Я согласен с условиями обработки&ensp;<a class="sub-form__agreement-link" href="#">персональных данных</a></label>
             </div>
             <button class="sub-form__sub-btn" type="submit">Записаться</button>
           </form>

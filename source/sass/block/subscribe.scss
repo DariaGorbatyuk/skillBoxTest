@@ -1,0 +1,54 @@
+.subscribe {
+  font-family: $roboto;
+  font-style: normal;
+}
+
+.subscribe__heading {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+
+.subscribe__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.subscribe__item {
+  display: flex;
+  font-family: $os;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 1.73;
+  align-items: flex-start;
+  letter-spacing: -0.5px;
+  color: $pale-purple;
+
+  &::before {
+    @include pseudo("\2022", block, static);
+    @include square(6px);
+    color: $blue;
+    font-weight: bold;
+    padding-right: 20px;
+  }
+}
+
+.subscribe__start,
+.subscribe__places {
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: -0.5px;
+  color: $pale-purple;
+}
+
+.subscribe__start-data,
+.subscribe__places-count {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: -0.5px;
+  color: $blue;
+}
