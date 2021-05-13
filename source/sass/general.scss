@@ -1,0 +1,51 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  min-height: 100%;
+  min-width: $small;
+  background-color: $white;
+  color: $black;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+input,
+textarea,
+select,
+button {
+  font: inherit;
+  line-height: inherit;
+}
+
+a {
+  color: inherit;
+  cursor: pointer;
+}
+
+input[type="checkbox"] ~ label {
+  cursor: pointer;
+}
+
+a:not([href]) {
+  cursor: auto;
+}
+
+button {
+  cursor: pointer;
+}
