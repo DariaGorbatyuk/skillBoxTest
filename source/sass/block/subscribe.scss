@@ -1,6 +1,7 @@
 .subscribe {
   font-family: $roboto;
   font-style: normal;
+  padding-top: 40px;
 }
 
 .subscribe__heading {
@@ -8,12 +9,16 @@
   font-size: 30px;
   line-height: 1.2;
   letter-spacing: -0.5px;
+  margin-top: 0;
+  padding-right: 31%;
+  margin-bottom: 26px;
 }
 
 .subscribe__list {
   list-style: none;
   padding: 0;
   margin: 0;
+  margin-bottom: 30px;
 }
 
 .subscribe__item {
@@ -25,13 +30,18 @@
   align-items: flex-start;
   letter-spacing: -0.5px;
   color: $pale-purple;
+  margin-bottom: 15px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   &::before {
     @include pseudo("\2022", block, static);
     @include square(6px);
     color: $blue;
     font-weight: bold;
-    padding-right: 20px;
+    padding-right: 24px;
   }
 }
 
@@ -42,8 +52,11 @@
   line-height: 18px;
   letter-spacing: -0.5px;
   color: $pale-purple;
+  margin-top: 0;
 }
-
+.subscribe__places{
+  margin-bottom: 32px;
+}
 .subscribe__start-data,
 .subscribe__places-count {
   font-weight: bold;

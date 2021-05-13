@@ -2,9 +2,17 @@
   font-style: normal;
 }
 
+.sub-form__box {
+  margin-bottom: 18px;
+
+  &:last-of-type {
+    margin-bottom: 51px;
+  }
+}
+
 .sub-form__inp {
   width: 100%;
-  padding: 17px 15px 15px 20px;
+  padding: 15px 15px 15px 27px;
   font-family: $os;
   font-weight: normal;
   font-size: 15px;
@@ -26,7 +34,7 @@
   display: inline-block;
   letter-spacing: -0.5px;
   color: $pale-purple;
-  padding-left: 24px;
+  padding-left: 42px;
   position: relative;
 
   &::before {
@@ -42,8 +50,8 @@
   &::after {
     @include pseudo();
     @include size(14px, 11px);
-    top: 0;
-    left: 0;
+    top: 6px;
+    left: 6px;
     background-image: url("../img/icon-check.svg");
   }
 }
@@ -63,7 +71,6 @@
   background: linear-gradient(0deg, #3D3BFF, #3D3BFF), #7CE187;
   border: none;
   padding-top: 24px;
-  padding-bottom: 24px;
   padding-left: 15px;
   padding-right: 15px;
   text-align: center;
@@ -75,4 +82,8 @@
   letter-spacing: 1px;
   text-transform: uppercase;
   color: $white;
+  padding-bottom: 26px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }

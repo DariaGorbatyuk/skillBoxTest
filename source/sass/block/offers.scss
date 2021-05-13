@@ -11,6 +11,10 @@
 }
 
 .offers__full {
+  margin-bottom: 6px;
+}
+
+.offers__full__text {
   font-size: 15px;
   line-height: 18px;
   text-align: center;
@@ -18,6 +22,7 @@
   color: rgba($white, 0.4);
   margin-top: 0;
   margin-bottom: 7px;
+  display: block;
 }
 
 .offers__full-price {
@@ -27,7 +32,6 @@
   line-height: 47px;
   letter-spacing: -2px;
   display: inline-block;
-  margin-top: 6px;
   position: relative;
 
   &::after {
@@ -37,16 +41,19 @@
     top: 50%;
     transform: translateY(-50%);
   }
-
 }
 
 .offers__installment {
+  margin-bottom: 23px;
+}
+
+.offers__installment-text {
   font-weight: bold;
   font-size: 18px;
   line-height: 21px;
   letter-spacing: -0.5px;
   margin-top: 0;
-  margin-bottom: 23px;
+  margin-bottom: 0;
 }
 
 .offers__installment-price {
@@ -58,7 +65,7 @@
   margin-bottom: -3px;
 }
 
-.offers__first {
+.offers__first-text {
   font-weight: normal;
   font-size: 15px;
   line-height: 18px;
