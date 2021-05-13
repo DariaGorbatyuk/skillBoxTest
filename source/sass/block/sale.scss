@@ -1,12 +1,16 @@
 .sale {
   position: absolute;
   left: 50%;
+  top: -54px;
   transform: translateX(-50%);
-  background-color: $black;
   color: $white;
   font-family: $roboto;
   text-align: center;
   font-style: normal;
+  width: 110px;
+  min-height: 120px;
+  background-image: url("../img/icon-sale.svg");
+  padding-top: 23px;
 }
 
 .sale__word {
@@ -16,6 +20,7 @@
   line-height: 16px;;
   letter-spacing: 1px;
   text-transform: uppercase;
+  margin-bottom: 7px;
 }
 
 .sale__size {
@@ -24,6 +29,7 @@
   font-size: 30px;
   line-height: 0.93;
   letter-spacing: -0.5px;
+  margin-bottom: 7px;
 }
 
 .sale__time {

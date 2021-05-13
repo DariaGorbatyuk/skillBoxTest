@@ -1,3 +1,10 @@
+.price{
+  padding-top: 55px;
+}
+
+.price__layout{
+  padding-top: 54px;
+}
 .price__heading{
   font-family: $roboto;
   font-style: normal;
@@ -7,4 +14,6 @@
   text-align: center;
   letter-spacing: -0.5px;
   color: $black;
+  margin-top: 0;
+  margin-bottom: 31px;
 }
