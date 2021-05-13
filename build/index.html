@@ -1,13 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Стартовый шаблон</title>
+  <meta name="description" content="Тестовое задание skillbox">
+  <title>Тестовое задание skillbox</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <h1>Добро пожаловать в Лигу А.</h1>
+<main>
+  <h1 class="visually-hidden">Skillbox</h1>
+  <div class="price">
+    <div class="container">
+      <h2 class="price__heading">Стоимость обучения</h2>
+    </div>
+    <div class="price__layout">
+      <section class="price__offers offers">
+        <div class="container">
+          <h3 class="visually-hidden">Выгодные предложения</h3>
+          <div class="offers__sale">
+            <span>скидка</span>
+            <b>40% </b>
+            <small>первым 20</small>
+          </div>
+          <p class="offers__full">Полная стоимость курса <span class="offers__full-price">50 000 &#8381;</span></p>
+          <p class="offers__installment"><span class="offers__installment-price">2 900  &#8381;</span>Рассрочка
+            без первого взноса</p>
+          <p class="offers__first"><span class="offers__first-price">29 000  &#8381;</span>Первым 20-ти
+          </p>
+        </div>
+      </section>
+      <section class="price__subscribe subscribe">
+        <div class="container">
+          <h3 class="subscribe__heading">Запишитесь на курс</h3>
+          <ul class="subscribe__list">
+            <li class="subscribe__item">Телефон</li>
+            <li class="subscribe__item">Телефон</li>
+            <li class="subscribe__item">Телефон</li>
+            <li class="subscribe__item">Телефон</li>
+          </ul>
+          <p class="subscribe__start">Старт курса <span class="subscribe__start-data">15 июля</span></p>
+          <p class="subscribe__places">Осталось<span class="subscribe__places-count">12 мест</span></p>
+          <form class="subscribe__form sub-form" action="https://echo.htmlacademy.ru" method="post">
+            <div class="sub-form__box">
+              <label class="visually-hidden" for="name">Имя</label>
+              <input type="text" name="name" id="name" placeholder="Имя" required="">
+            </div>
+            <div class="sub-form__box">
+              <label class="visually-hidden" for="tel">Телефон</label>
+              <input type="tel" name="tel" id="tel" placeholder="Телефон" required="">
+            </div>
+            <div class="sub-form__box">
+              <label class="visually-hidden" for="email">Email</label>
+              <input type="email" name="email" id="email" placeholder="Email" required="">
+            </div>
+            <div class="sub-form__box">
+              <input type="checkbox" name="agreement" id="agreement" checked="">
+              <label for="agreement">Я согласен с условиями обработки персональных данных</label>
+            </div>
+            <button class="sub-form__sub-btn" type="submit">Записаться</button>
+          </form>
+        </div>
+      </section>
+    </div>
+
+  </div>
+</main>
 </body>
 </html>
