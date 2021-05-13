@@ -2,6 +2,20 @@
   font-family: $roboto;
   font-style: normal;
   padding-top: 40px;
+  background-color: $background;
+
+  @media (min-width: $medium) {
+    background-color: inherit;
+    padding-top: 0;
+  }
+}
+
+.subscribe__layout {
+  @media (min-width: $medium) {
+    background-color: $background;
+    box-shadow: 0 2px 24px rgba($nice-gray, 0.3);
+    padding: 71px 122px 78px 122px;
+  }
 }
 
 .subscribe__heading {
@@ -12,6 +26,14 @@
   margin-top: 0;
   padding-right: 31%;
   margin-bottom: 26px;
+
+  @media (min-width: $medium) {
+    font-size: 38px;
+    line-height: 40px;
+    text-align: center;
+    padding-right: 0;
+    margin-bottom: 39px;
+  }
 }
 
 .subscribe__list {
@@ -19,6 +41,10 @@
   padding: 0;
   margin: 0;
   margin-bottom: 30px;
+
+  @media (min-width: $medium) {
+    margin-bottom: 55px;
+  }
 }
 
 .subscribe__item {
@@ -27,7 +53,7 @@
   font-weight: normal;
   font-size: 15px;
   line-height: 1.73;
-  align-items: flex-start;
+  align-items: center;
   letter-spacing: -0.5px;
   color: $pale-purple;
   margin-bottom: 15px;
@@ -37,11 +63,23 @@
   }
 
   &::before {
-    @include pseudo("\2022", block, static);
+    @include pseudo("", block, static);
     @include square(6px);
-    color: $blue;
-    font-weight: bold;
-    padding-right: 24px;
+    border-radius: 50%;
+    background-color: $blue;
+    margin-right: 19px;
+  }
+}
+
+.subscribe__info {
+  margin-bottom: 32px;
+
+  @media (min-width: $medium) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 27px;
   }
 }
 
@@ -53,10 +91,18 @@
   letter-spacing: -0.5px;
   color: $pale-purple;
   margin-top: 0;
+
+  @media (min-width: $medium) {
+    flex-basis: 50%;
+    margin-bottom: 0;
+    padding-left: 61px;
+  }
 }
-.subscribe__places{
-  margin-bottom: 32px;
+
+.subscribe__places {
+  padding-left: 33px;
 }
+
 .subscribe__start-data,
 .subscribe__places-count {
   font-weight: bold;
