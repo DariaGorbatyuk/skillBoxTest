@@ -8,10 +8,28 @@
   color: $white;
   padding-top: 90px;
   padding-bottom: 40px;
+
+  @media (min-width: $medium) {
+    background-color: $white;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.offers__layout {
+  @media (min-width: $medium) {
+    background-color: $blue;
+    padding-top: 133px;
+    padding-bottom: 74px;
+  }
 }
 
 .offers__full {
   margin-bottom: 6px;
+
+  @media (min-width: $medium) {
+    margin-bottom: 22px;
+  }
 }
 
 .offers__full__text {
@@ -30,6 +48,7 @@
   font-weight: 300;
   font-size: 36px;
   line-height: 47px;
+  color: rgba($white, 0.4);
   letter-spacing: -2px;
   display: inline-block;
   position: relative;
@@ -45,6 +64,10 @@
 
 .offers__installment {
   margin-bottom: 23px;
+
+  @media (min-width: $medium) {
+    margin-bottom: 35px;
+  }
 }
 
 .offers__installment-text {
@@ -54,6 +77,10 @@
   letter-spacing: -0.5px;
   margin-top: 0;
   margin-bottom: 0;
+
+  @media (min-width: $medium) {
+    font-size: 20px;
+  }
 }
 
 .offers__installment-price {
@@ -63,6 +90,12 @@
   letter-spacing: -2px;
   display: block;
   margin-bottom: -3px;
+
+  @media (min-width: $medium) {
+    font-size: 80px;
+    line-height: 106px;
+    margin-bottom: -10px;
+  }
 }
 
 .offers__first-text {
@@ -72,6 +105,11 @@
   letter-spacing: -0.5px;
   margin-top: 0;
   margin-bottom: 0;
+
+  @media (min-width: $medium) {
+    font-size: 18px;
+    line-height: 21px;
+  }
 }
 
 .offers__first-price {
@@ -81,6 +119,11 @@
   line-height: 53px;
   letter-spacing: -2px;
   display: block;
+
+  @media (min-width: $medium) {
+    font-size: 50px;
+    line-height: 66px;
+  }
 }
 
 .offers__first__svg {

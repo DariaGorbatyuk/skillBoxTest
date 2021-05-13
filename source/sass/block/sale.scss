@@ -11,6 +11,10 @@
   min-height: 120px;
   background-image: url("../img/icon-sale.svg");
   padding-top: 23px;
+
+  @media (min-width: $medium) {
+    top: -21px;
+  }
 }
 
 .sale__word {

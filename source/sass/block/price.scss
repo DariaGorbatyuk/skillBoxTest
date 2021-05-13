@@ -1,12 +1,21 @@
-.price{
+.price {
   padding-top: 55px;
   padding-bottom: 55px;
+
+  @media (min-width: $medium) {
+    padding-top: 50px;
+  }
 }
 
-.price__layout{
+.price__layout {
   padding-top: 54px;
+
+  @media (min-width: $medium) {
+    padding-top: 0;
+  }
 }
-.price__heading{
+
+.price__heading {
   font-family: $roboto;
   font-style: normal;
   font-weight: bold;
@@ -17,4 +26,10 @@
   color: $black;
   margin-top: 0;
   margin-bottom: 31px;
+
+  @media (min-width: $medium) {
+    font-size: 45px;
+    line-height: 53px;
+    margin-bottom: 77px;
+  }
 }
