@@ -49,6 +49,15 @@
     color: $pale-purple;
   }
 
+  &:focus {
+    outline: none;
+    border: 2px solid $blue;
+  }
+
+  &:hover {
+    border: 2px solid lighten($blue, 10%);
+  }
+
   @media (min-width: $medium) {
     padding-left: 22px;
   }
@@ -75,6 +84,7 @@
     border: 2px solid $light-gray;
     top: 0;
     left: 0;
+    transition: all 300ms ease-in;
   }
 
   @media (min-width: $medium) {
@@ -84,6 +94,13 @@
   @media (min-width: $large) {
     padding-left: 40px;
   }
+
+  &:hover,
+  &:focus {
+    &::before {
+      border: 2px solid $blue;
+    }
+  }
 }
 
 .sub-form__lch-text {
@@ -92,8 +109,17 @@
   }
 }
 
-.sub-form__ch:checked ~ label {
-  &::after {
+.sub-form__ch {
+  &:hover,
+  &:focus {
+    outline: none;
+
+    & ~ label::before {
+      border: 2px solid $blue;
+    }
+  }
+
+  &:checked ~ label::after {
     @include pseudo();
     @include size(14px, 11px);
     top: 6px;
@@ -110,6 +136,12 @@
   letter-spacing: -0.5px;
   color: $blue;
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    text-decoration: underline;
+  }
 }
 
 .sub-form__sub-btn {
@@ -132,6 +164,12 @@
   margin-left: auto;
   margin-right: auto;
   display: block;
+
+  &:focus,
+  &:hover {
+    outline: 2px solid $white;
+    outline-offset: -10px;
+  }
 
   @media (min-width: $medium) {
     width: 100%;
