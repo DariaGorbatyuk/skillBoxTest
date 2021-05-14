@@ -3,18 +3,9 @@
   font-style: normal;
   padding-top: 40px;
   background-color: $background;
+  padding-left: 25px;
+  padding-right: 25px;
 
-  @media (min-width: $medium) {
-    background-color: inherit;
-    padding-top: 0;
-  }
-
-  @media (min-width: $large) {
-    flex-basis: 50%;
-  }
-}
-
-.subscribe__layout {
   @media (min-width: $medium) {
     background-color: $background;
     box-shadow: 0 2px 24px rgba($nice-gray, 0.3);
@@ -22,7 +13,7 @@
   }
 
   @media (min-width: $large) {
-    padding: 0;
+    flex-basis: 50%;
   }
 }
 
@@ -108,7 +99,9 @@
 }
 
 .subscribe__places {
-  padding-left: 33px;
+  @media (min-width: $medium) {
+    padding-left: 33px;
+  }
 }
 
 .subscribe__start-data,

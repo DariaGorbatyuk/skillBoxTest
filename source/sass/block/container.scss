@@ -11,4 +11,16 @@
     padding: 0 2.4%;;
     margin: 0 auto;
   }
+
+  &--mob {
+    padding: 0;
+
+    @media (min-width: $medium) {
+      padding: 0 3.9%;
+    }
+
+    @media (min-width: $large) {
+      padding: 0 2.4%;;
+    }
+  }
 }

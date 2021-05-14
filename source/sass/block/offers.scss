@@ -21,10 +21,14 @@
 }
 
 .offers__layout {
+  padding: 0 25px;
+
   @media (min-width: $medium) {
     background-color: $blue;
     padding-top: 133px;
     padding-bottom: 74px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 

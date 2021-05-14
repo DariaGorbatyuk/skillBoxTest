@@ -18,12 +18,10 @@
 <main>
   <h1 class="visually-hidden">Skillbox</h1>
   <div class="price">
-    <div class="container">
+    <div class="container container--mob">
       <h2 class="price__heading">Стоимость обучения</h2>
-    </div>
-    <div class="price__layout">
-      <section class="price__offers offers">
-        <div class="container">
+      <div class="price__layout">
+        <section class="price__offers offers">
           <div class="offers__layout">
             <h3 class="visually-hidden">Выгодные предложения</h3>
             <div class="offers__sale sale">
@@ -56,46 +54,41 @@
               <p class="offers__first-text">Первым 20-ти</p>
             </div>
           </div>
-        </div>
-      </section>
-      <section class="price__subscribe subscribe">
-        <div class="container">
-          <div class="subscribe__layout">
-            <h3 class="subscribe__heading">Запишитесь на&nbsp;курс</h3>
-            <ul class="subscribe__list">
-              <li class="subscribe__item">Телефон</li>
-              <li class="subscribe__item">Телефон</li>
-              <li class="subscribe__item">Телефон</li>
-              <li class="subscribe__item">Телефон</li>
-            </ul>
-            <div class="subscribe__info">
-              <p class="subscribe__start">Старт курса <span class="subscribe__start-data">15 июля</span></p>
-              <p class="subscribe__places">Осталось <span class="subscribe__places-count">12 мест</span></p>
-            </div>
-            <form class="subscribe__form sub-form" action="https://echo.htmlacademy.ru" method="post">
-              <div class="sub-form__box">
-                <label class="visually-hidden" for="name">Имя</label>
-                <input class="sub-form__inp" type="text" name="name" id="name" placeholder="Имя" required="">
-              </div>
-              <div class="sub-form__box">
-                <label class="visually-hidden" for="tel">Телефон</label>
-                <input class="sub-form__inp" type="tel" name="tel" id="tel" placeholder="Телефон" required="">
-              </div>
-              <div class="sub-form__box">
-                <label class="visually-hidden" for="email">Email</label>
-                <input class="sub-form__inp" type="email" name="email" id="email" placeholder="Email" required="">
-              </div>
-              <div class="sub-form__box">
-                <input class="sub-form__ch" type="checkbox" name="agreement" id="agreement" checked="">
-                <label class="sub-form__lch" for="agreement">Я согласен с условиями обработки&ensp;<a class="sub-form__agreement-link" href="#">персональных данных</a></label>
-              </div>
-              <button class="sub-form__sub-btn" type="submit">Записаться</button>
-            </form>
+        </section>
+        <section class="price__subscribe subscribe">
+          <h3 class="subscribe__heading">Запишитесь на&nbsp;курс</h3>
+          <ul class="subscribe__list">
+            <li class="subscribe__item">Телефон</li>
+            <li class="subscribe__item">Телефон</li>
+            <li class="subscribe__item">Телефон</li>
+            <li class="subscribe__item">Телефон</li>
+          </ul>
+          <div class="subscribe__info">
+            <p class="subscribe__start">Старт курса <span class="subscribe__start-data">15 июля</span></p>
+            <p class="subscribe__places">Осталось <span class="subscribe__places-count">12 мест</span></p>
           </div>
-        </div>
-      </section>
+          <form class="subscribe__form sub-form" action="https://echo.htmlacademy.ru" method="post">
+            <div class="sub-form__box">
+              <label class="visually-hidden" for="name">Имя</label>
+              <input class="sub-form__inp" type="text" name="name" id="name" placeholder="Имя" required="">
+            </div>
+            <div class="sub-form__box">
+              <label class="visually-hidden" for="tel">Телефон</label>
+              <input class="sub-form__inp" type="tel" name="tel" id="tel" placeholder="Телефон" required="">
+            </div>
+            <div class="sub-form__box">
+              <label class="visually-hidden" for="email">Email</label>
+              <input class="sub-form__inp" type="email" name="email" id="email" placeholder="Email" required="">
+            </div>
+            <div class="sub-form__box">
+              <input class="sub-form__ch" type="checkbox" name="agreement" id="agreement" checked="">
+              <label class="sub-form__lch" for="agreement">Я согласен с условиями обработки&ensp;<a class="sub-form__agreement-link" href="#">персональных данных</a></label>
+            </div>
+            <button class="sub-form__sub-btn" type="submit">Записаться</button>
+          </form>
+        </section>
+      </div>
     </div>
-  </div>
-</main>
+</div></main>
 </body>
 </html>
