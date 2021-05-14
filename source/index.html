@@ -74,11 +74,11 @@
           <form class="subscribe__form sub-form" action="https://echo.htmlacademy.ru" method="post">
             <div class="sub-form__box">
               <label class="visually-hidden" for="name">Имя</label>
-              <input class="sub-form__inp" type="text" name="name" id="name" placeholder="Имя" required>
+              <input class="sub-form__inp" type="text" name="name" id="name" placeholder="Имя" required minlength="2">
             </div>
             <div class="sub-form__box">
               <label class="visually-hidden" for="tel">Телефон</label>
-              <input class="sub-form__inp" type="tel" name="tel" id="tel" placeholder="Телефон" required>
+              <input class="sub-form__inp" type="tel" name="tel" id="tel" placeholder="Телефон" required minlength="11">
             </div>
             <div class="sub-form__box">
               <label class="visually-hidden" for="email">Email</label>
@@ -98,5 +98,6 @@
     </div>
   </div>
 </main>
+<script src="js/script.js"></script>
 </body>
 </html>

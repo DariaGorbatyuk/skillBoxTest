@@ -9,6 +9,7 @@
 
 .sub-form__box {
   margin-bottom: 18px;
+  position: relative;
 
   &:last-of-type {
     margin-bottom: 52px;
@@ -30,6 +31,17 @@
       order: 1;
       margin-top: 0;
       margin-bottom: 0;
+    }
+  }
+
+  &--short{
+    &::after{
+      @include pseudo("Недостаточно символов", block, absolute);
+      bottom: -14px;
+      left: 0;
+      color: $wrong;
+      font-size: 10px;
+      line-height: 16px;
     }
   }
 }
