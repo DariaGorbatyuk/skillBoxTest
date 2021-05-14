@@ -14,6 +14,8 @@
 
   @media (min-width: $large) {
     flex-basis: 50%;
+    padding: 58px 11% 57px 7.3%;
+    min-width: 519px;
   }
 }
 
@@ -33,6 +35,11 @@
     padding-right: 0;
     margin-bottom: 39px;
   }
+
+  @media (min-width: $large) {
+    text-align: left;
+    margin-bottom: 25px;
+  }
 }
 
 .subscribe__list {
@@ -43,6 +50,10 @@
 
   @media (min-width: $medium) {
     margin-bottom: 55px;
+  }
+
+  @media (min-width: $large) {
+    margin-bottom: 47px;
   }
 }
 
@@ -75,9 +86,8 @@
 
   @media (min-width: $medium) {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 27px;
   }
 }
@@ -92,15 +102,26 @@
   margin-top: 0;
 
   @media (min-width: $medium) {
-    flex-basis: 50%;
+    flex-basis: 55%;
     margin-bottom: 0;
-    padding-left: 61px;
+    padding-left: 13%;
+  }
+
+  @media (min-width: $large) {
+    padding-left: 0;
+    min-width: 170px;
   }
 }
 
 .subscribe__places {
   @media (min-width: $medium) {
-    padding-left: 33px;
+    padding-left: 2%;
+    flex-basis: 45%;
+  }
+
+  @media (min-width: $large) {
+    padding-left: 0;
+    text-align: right;
   }
 }
 
@@ -111,4 +132,8 @@
   line-height: 23px;
   letter-spacing: -0.5px;
   color: $blue;
+
+  @media (min-width: $large) {
+    margin-left: 5px;
+  }
 }

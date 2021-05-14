@@ -7,6 +7,10 @@
     padding-bottom: 75px;
     background-color: $tablet-back;
   }
+
+  @media (min-width: $large) {
+    padding-bottom: 100px;
+  }
 }
 
 .price__layout {
@@ -38,8 +42,13 @@
 
   @media (min-width: $medium) {
     font-size: 45px;
-    line-height: 53px;
+    line-height: 1.16;
     margin-bottom: 77px;
     padding: 0;
+  }
+
+  @media (min-width: $large) {
+    font-size: 55px;
+    margin-bottom: 56px;
   }
 }
