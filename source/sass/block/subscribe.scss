@@ -8,6 +8,10 @@
     background-color: inherit;
     padding-top: 0;
   }
+
+  @media (min-width: $large) {
+    flex-basis: 50%;
+  }
 }
 
 .subscribe__layout {
@@ -15,6 +19,10 @@
     background-color: $background;
     box-shadow: 0 2px 24px rgba($nice-gray, 0.3);
     padding: 71px 122px 78px 122px;
+  }
+
+  @media (min-width: $large) {
+    padding: 0;
   }
 }
 
