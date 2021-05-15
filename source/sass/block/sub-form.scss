@@ -44,6 +44,17 @@
       line-height: 16px;
     }
   }
+
+  &--wrong{
+    &::after{
+      @include pseudo("Неверный формат", block, absolute);
+      bottom: -14px;
+      left: 0;
+      color: $wrong;
+      font-size: 10px;
+      line-height: 16px;
+    }
+  }
 }
 
 .sub-form__inp {
