@@ -34,8 +34,8 @@
     }
   }
 
-  &--short{
-    &::after{
+  &--short {
+    &::after {
       @include pseudo("Недостаточно символов", block, absolute);
       bottom: -14px;
       left: 0;
@@ -45,8 +45,8 @@
     }
   }
 
-  &--wrong{
-    &::after{
+  &--wrong {
+    &::after {
       @include pseudo("Неверный формат", block, absolute);
       bottom: -14px;
       left: 0;
@@ -169,7 +169,7 @@
 
 .sub-form__sub-btn {
   width: 270px;
-  background: linear-gradient(0deg, #3D3BFF, #3D3BFF), #7CE187;
+  background: linear-gradient(0deg, $blue, $blue), $green;
   border: none;
   padding-top: 24px;
   padding-left: 15px;

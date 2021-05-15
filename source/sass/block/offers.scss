@@ -81,7 +81,7 @@
 
   @media (min-width: $large) {
     svg {
-      @include size(21px, 27px)
+      @include size(21px, 27px);
     }
   }
 }
@@ -175,6 +175,7 @@
     &--s {
       display: block;
     }
+
     &--f {
       display: none;
     }
@@ -206,7 +207,7 @@
     }
 
     svg {
-      @include size(23px, 34px)
+      @include size(23px, 34px);
     }
   }
 
